@@ -5,35 +5,89 @@
 
 <style type="text/css">
   body {
-    margin: 2em 5%;
-    text-align: justify;
-    font-family: sans-serif;
-    font-size: 10pt;
+    margin: 2em auto;
+    max-width: 44em;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: #2b2b2b;
   }
 
   h3 {
     font-weight: bold;
-    font-size: 12pt;
-    border-bottom: 2px solid black;
+    font-size: 11pt;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #1c4d6e;
+    border-bottom: 2px solid #1c4d6e;
+    padding-bottom: 0.25em;
+    margin-top: 2.2em;
+    margin-bottom: 1em;
   }
 
     h3.name {
-      font-size: 16pt;
+      font-size: 21pt;
+      letter-spacing: -0.01em;
+      text-transform: none;
+      color: #111;
+      border-bottom: 3px solid #1c4d6e;
+      margin-top: 0;
+      margin-bottom: 1.2em;
+    }
+
+  a {
+    color: #1c4d6e;
+    text-decoration: none;
+  }
+
+    a:hover {
+      text-decoration: underline;
     }
 
   .period {
     display: block;
     float: left;
+    width: 112pt;
     margin-left: -120pt;
+    text-align: right;
+    color: #777;
+    font-variant-numeric: tabular-nums;
   }
 
   p, ul {
     padding-left: 120pt;
-    padding-right: 40pt;
+    margin-bottom: 1em;
   }
 
   li {
     margin-bottom: 0.5em;
+  }
+
+  @media (max-width: 55em) {
+    body {
+      margin: 1em;
+    }
+
+    .period {
+      display: inline-block;
+      float: none;
+      width: auto;
+      margin-left: 0;
+      margin-right: 0.75em;
+      text-align: left;
+      font-weight: bold;
+      color: #555;
+    }
+
+    p, ul {
+      padding-left: 0;
+    }
+  }
+
+  @media print {
+    body {
+      margin: 0.5in;
+    }
   }
 </style>
 </head>
